@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.3 on win32)" generated="2025-03-25T14:36:23.825387" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Avec Template Data" source="c:\Users\TCHANTCHO\Desktop\QA3\robot-framework\robotframework_saucedemo\tests\login_avec_template_data.robot">
+<test id="s1-t1" name="Case 1" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-03-25T14:36:24.499346" level="INFO">Opening browser 'chrome' to base url 'http://www.saucedemo.com' through remote server at 'http://localhost:4444/wd/hub'.</msg>
+<msg time="2025-03-25T14:41:24.515822" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-03-25T14:41:24.516825" level="FAIL">SessionNotCreatedException: Message: Could not start a new session. New session request timed out
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: '8d16a3538786', ip: '172.23.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '11.0.14.1'
+Driver info: driver.version: unknown
+Stacktrace:
+    at org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue.addToQueue (LocalNewSessionQueue.java:195)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.lambda$new$0 (NewSessionQueue.java:68)
+    at org.openqa.selenium.remote.http.Route$TemplatizedRoute.handle (Route.java:192)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.execute (NewSessionQueue.java:120)
+    at org.openqa.selenium.remote.tracing.SpanWrappedHttpHandler.execute (SpanWrappedHttpHandler.java:86)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.grid.router.Router.execute (Router.java:91)
+    at org.openqa.selenium.grid.web.EnsureSpecCompliantResponseHeaders.lambda$apply$0 (EnsureSpecCompliantResponseHeaders.java:34)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.http.Route$NestedRoute.handle (Route.java:270)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.AddWebDriverSpecHeaders.lambda$apply$0 (AddWebDriverSpecHeaders.java:35)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.netty.server.SeleniumHandler.lambda$channelRead0$0 (SeleniumHandler.java:44)
+    at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1128)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:628)
+    at java.lang.Thread.run (Thread.java:829)</msg>
+<arg>http://www.saucedemo.com</arg>
+<arg>browser=chrome</arg>
+<arg>remote_url=http://localhost:4444/wd/hub</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-03-25T14:36:24.498351" elapsed="300.024538">SessionNotCreatedException: Message: Could not start a new session. New session request timed out
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: '8d16a3538786', ip: '172.23.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '11.0.14.1'
+Driver info: driver.version: unknown
+Stacktrace:
+    at org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue.addToQueue (LocalNewSessionQueue.java:195)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.lambda$new$0 (NewSessionQueue.java:68)
+    at org.openqa.selenium.remote.http.Route$TemplatizedRoute.handle (Route.java:192)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.execute (NewSessionQueue.java:120)
+    [ Message content over the limit has been removed. ]
+...org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.AddWebDriverSpecHeaders.lambda$apply$0 (AddWebDriverSpecHeaders.java:35)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.netty.server.SeleniumHandler.lambda$channelRead0$0 (SeleniumHandler.java:44)
+    at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1128)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:628)
+    at java.lang.Thread.run (Thread.java:829)</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-25T14:41:24.524276" elapsed="0.001016"/>
+</kw>
+<tag>@regresssion</tag>
+<status status="FAIL" start="2025-03-25T14:36:24.473017" elapsed="300.053272">Setup failed:
+SessionNotCreatedException: Message: Could not start a new session. New session request timed out
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: '8d16a3538786', ip: '172.23.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '11.0.14.1'
+Driver info: driver.version: unknown
+Stacktrace:
+    at org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue.addToQueue (LocalNewSessionQueue.java:195)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.lambda$new$0 (NewSessionQueue.java:68)
+    at org.openqa.selenium.remote.http.Route$TemplatizedRoute.handle (Route.java:192)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.execute (NewSessionQueue.java:120)
+    [ Message content over the limit has been removed. ]
+...org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.AddWebDriverSpecHeaders.lambda$apply$0 (AddWebDriverSpecHeaders.java:35)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.netty.server.SeleniumHandler.lambda$channelRead0$0 (SeleniumHandler.java:44)
+    at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1128)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:628)
+    at java.lang.Thread.run (Thread.java:829)</status>
+</test>
+<test id="s1-t2" name="Case 3" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-03-25T14:41:24.534287" level="INFO">Opening browser 'chrome' to base url 'http://www.saucedemo.com' through remote server at 'http://localhost:4444/wd/hub'.</msg>
+<msg time="2025-03-25T14:46:24.532289" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-03-25T14:46:24.533287" level="FAIL">SessionNotCreatedException: Message: Could not start a new session. New session request timed out
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: '8d16a3538786', ip: '172.23.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '11.0.14.1'
+Driver info: driver.version: unknown
+Stacktrace:
+    at org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue.addToQueue (LocalNewSessionQueue.java:195)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.lambda$new$0 (NewSessionQueue.java:68)
+    at org.openqa.selenium.remote.http.Route$TemplatizedRoute.handle (Route.java:192)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.execute (NewSessionQueue.java:120)
+    at org.openqa.selenium.remote.tracing.SpanWrappedHttpHandler.execute (SpanWrappedHttpHandler.java:86)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.grid.router.Router.execute (Router.java:91)
+    at org.openqa.selenium.grid.web.EnsureSpecCompliantResponseHeaders.lambda$apply$0 (EnsureSpecCompliantResponseHeaders.java:34)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.http.Route$NestedRoute.handle (Route.java:270)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.AddWebDriverSpecHeaders.lambda$apply$0 (AddWebDriverSpecHeaders.java:35)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.netty.server.SeleniumHandler.lambda$channelRead0$0 (SeleniumHandler.java:44)
+    at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1128)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:628)
+    at java.lang.Thread.run (Thread.java:829)</msg>
+<arg>http://www.saucedemo.com</arg>
+<arg>browser=chrome</arg>
+<arg>remote_url=http://localhost:4444/wd/hub</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-03-25T14:41:24.532290" elapsed="300.004106">SessionNotCreatedException: Message: Could not start a new session. New session request timed out
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: '8d16a3538786', ip: '172.23.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '11.0.14.1'
+Driver info: driver.version: unknown
+Stacktrace:
+    at org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue.addToQueue (LocalNewSessionQueue.java:195)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.lambda$new$0 (NewSessionQueue.java:68)
+    at org.openqa.selenium.remote.http.Route$TemplatizedRoute.handle (Route.java:192)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.execute (NewSessionQueue.java:120)
+    [ Message content over the limit has been removed. ]
+...org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.AddWebDriverSpecHeaders.lambda$apply$0 (AddWebDriverSpecHeaders.java:35)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.netty.server.SeleniumHandler.lambda$channelRead0$0 (SeleniumHandler.java:44)
+    at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1128)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:628)
+    at java.lang.Thread.run (Thread.java:829)</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-25T14:46:24.537913" elapsed="0.001020"/>
+</kw>
+<tag>@regresssion</tag>
+<status status="FAIL" start="2025-03-25T14:41:24.531289" elapsed="300.009645">Setup failed:
+SessionNotCreatedException: Message: Could not start a new session. New session request timed out
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: '8d16a3538786', ip: '172.23.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '11.0.14.1'
+Driver info: driver.version: unknown
+Stacktrace:
+    at org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue.addToQueue (LocalNewSessionQueue.java:195)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.lambda$new$0 (NewSessionQueue.java:68)
+    at org.openqa.selenium.remote.http.Route$TemplatizedRoute.handle (Route.java:192)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.execute (NewSessionQueue.java:120)
+    [ Message content over the limit has been removed. ]
+...org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:336)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:68)
+    at org.openqa.selenium.remote.AddWebDriverSpecHeaders.lambda$apply$0 (AddWebDriverSpecHeaders.java:35)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:64)
+    at org.openqa.selenium.netty.server.SeleniumHandler.lambda$channelRead0$0 (SeleniumHandler.java:44)
+    at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1128)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:628)
+    at java.lang.Thread.run (Thread.java:829)</status>
+</test>
+<status status="FAIL" start="2025-03-25T14:36:23.834918" elapsed="600.716279"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">@regresssion</stat>
+</tag>
+<suite>
+<stat name="Login Avec Template Data" id="s1" pass="0" fail="2" skip="0">Login Avec Template Data</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-03-25T14:36:23.794621" level="WARN">Error in file 'c:\Users\TCHANTCHO\Desktop\QA3\robot-framework\robotframework_saucedemo\tests\login_avec_template_data.robot' on line 17: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
