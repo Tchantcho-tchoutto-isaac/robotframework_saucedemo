@@ -1,6 +1,11 @@
 pipeline {
-    agent any
-    
+    agent {
+        docker {
+            image 'python:3.9-alpine'  // Image avec Python pré-installé
+            args '-u root'  // Exécute en tant que root
+        }
+    }
+
     environment {
         ROBOT_OPTIONS = "--outputdir results"
     }
@@ -8,37 +13,23 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                script {
-                    if (isUnix()) {
-                        sh 'python3 --version'
-                        sh 'python3 -m pip install --upgrade pip'
-                        sh 'python3 -m pip install -r requirements.txt'
-                    } else {
-                        bat 'python --version'
-                        bat 'python -m pip install --upgrade pip'
-                        bat 'python -m pip install -r requirements.txt'
-                    }
-                }
+                sh 'python --version'
+                sh 'pip install --upgrade pip'
+                sh 'pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
-                script {
-                    if (isUnix()) {
-                        sh "robot ${env.ROBOT_OPTIONS} tests/"
-                    } else {
-                        bat "robot ${env.ROBOT_OPTIONS} tests/"
-                    }
-                }
+                sh 'robot ${ROBOT_OPTIONS} tests/'
             }
         }
     }
 
     post {
         always {
-            archiveArtifacts artifacts: 'results/**/*'
             junit 'results/output.xml'
+            archiveArtifacts artifacts: 'results/**/*'
         }
     }
 }
