@@ -26,10 +26,4 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            junit 'results/output.xml'
-            archiveArtifacts artifacts: 'results/**/*'
-        }
-    }
 }
