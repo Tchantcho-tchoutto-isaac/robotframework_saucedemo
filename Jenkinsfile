@@ -1,8 +1,8 @@
 pipeline {
     agent {
         docker {
-            image 'python:3.9-alpine'  // Utilisation de l'image Python
-            args '--privileged -v /var/run/docker.sock:/var/run/docker.sock'  // Donne accès au socket Docker
+            image 'python:3.9-alpine'  
+            args '--privileged -v /var/run/docker.sock:/var/run/docker.sock'  
         }
     }
 
@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                sh 'docker --version'  // Vérifie que Docker est accessible dans Jenkins
+                sh 'docker --version'  
                 sh 'pip install --upgrade pip'
                 sh 'pip install -r requirements.txt'
             }
@@ -21,14 +21,14 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh 'robot ${ROBOT_OPTIONS} tests/'  // Exécute les tests Robot Framework
+                sh 'robot ${ROBOT_OPTIONS} tests/'  
             }
         }
     }
 
     post {
         always {
-            junit 'results/output.xml'  // Archive les résultats des tests
+            junit 'results/output.xml' 
             archiveArtifacts artifacts: 'results/**/*'  // Archive tous les artefacts
         }
     }
